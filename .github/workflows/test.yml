@@ -39,7 +39,7 @@ jobs:
           forge build --sizes
         id: build
 
-      - name: Run Forge tests
+      - name: Run bug reproduction
         run: |
-          forge test -vvv
+          ./run_dumpstate.sh
         id: test
